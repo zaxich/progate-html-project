@@ -1,11 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>Title of the document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+<meta charset="utf-8">
+<title>Suka Kadoku</title>
+<link rel="stylesheet" type="text/css" href="assets/css/body2.css" />
+
 </head>
 
 <body>
-The content of the document......
-</body>
+	<div class="our-products">
+		<h2 align="center">Produk Kami</h2>
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<div class="numbertext">1 / 5</div>
+				<img src="assets/images/choco-bouquet.jpg" style="width:100%">
+				<div class="text">Buket Coklat</div>
+			</div>
 
+			<div class="mySlides fade">
+				<div class="numbertext">2 / 5</div>
+				<img src="assets/images/hairMask-bouquet.jpg" style="width:100%">
+				<div class="text">Buket Masker</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">3 / 5</div>
+				<img src="assets/images/snack-bouquet.jpg" style="width:100%">
+				<div class="text">Buket Camilan</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">4 / 5</div>
+				<img src="assets/images/doll-bouquet.jpg" style="width:100%">
+				<div class="text">Buket Boneka</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div class="numbertext">5 / 5</div>
+				<img src="assets/images/rose-bouquet.jpg" style="width:100%">
+				<div class="text">Buket Bunga</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+				<span class="dot" onclick="currentSlide(4)"></span> 
+				<span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+		</div>
+	</div>
+</body>
 </html>
+<script type="text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	      slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	      dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
