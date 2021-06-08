@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+.description {
+	background-color:#fcfbf7;
+	font-family: arial;
+	height: 500px;
+	width: 100%;
+}
+
+.descriplogo {
+	max-width: 500px;
+	float: right;
+}
+
+.description h1 {
+	color:#dd2d76;
+	font-size: 50px;
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.description h2 {
+	color: #63dbd5;
+	font-size: 18px;
+	margin: 0 auto;
+	text-align: center;
+}
+	
+.descriptxt p{
+	color: #000;
+	text-align: justify;
+	margin: 30px 50px;
+}
+
+.scroll p{
+	float: right;
+	font-size: 12px;
+	margin: 30px 0;
+	padding: 5px;
+	display: inline-block;
+	border: 2px dotted #63dbd5;
+}
+
+.scrollimg {
+	max-width: 75px;
+	float: right;
+}
+
+@media only screen and (max-width: 670px) {
+	.description {
+		font-size: 12px;
+}
