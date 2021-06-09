@@ -27,7 +27,7 @@ a {
 }
 
 header {
-  height: 130px;
+  height: 50px;
   width: 100%;
   background-color: rgba(221,45,118,1);
   position :fixed;
@@ -36,7 +36,7 @@ header {
 }
 
 .logo {
-  width: 125px;
+  width: 50px;
   height: 100%;
 }
 
@@ -47,7 +47,7 @@ header {
   color: #fcd660;
   float: left;
   position: absolute;
-  top: 52.5px;
+  top: 10px;
   left: 5%;
   border: 2px solid #fcd660;
   border-radius: 20px;
@@ -69,24 +69,24 @@ header {
 }
 
 .login {
-  line-height: 65px;
+  line-height: 50px;
   padding: 0 25px;
   color: #fcd660;
   display: block;
   float: left;
   position: absolute;
-  top: 32.5px;
+  top: 0;
   right: 17%;
 }
 
 .shopping-bag {
-  line-height: 65px;
+  line-height: 50px;
   padding: 0 25px;
   color: #fcd660;
   display: block;
   float: left;
   position: absolute;
-  top: 32.5px;
+  top: 0;
   right: 2%;
 }
 
