@@ -101,18 +101,22 @@ header {
   position: absolute;
   top: 52.5px;
   right: 5%;
-  display: none !important;
+  display: none;
 }
 
 /* Untuk Tablet */
 @media all and (max-width: 1000px) {
   .login {
-   font-size: 15px; 
-   right: 22%;
+    font-size: 15px; 
+    right: 22%;
   }
-   .shopping-bag {
-   font-size: 15px; 
+  
+  .shopping-bag {
+    font-size: 15px; 
   }
+  
+  .menu-icon {
+    display: none; 
 }
 
 /* Untuk Smartphone */
